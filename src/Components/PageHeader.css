@@ -1,0 +1,19 @@
+.page-header-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.page-header-container hr {
+  position: absolute;
+  left: 0;
+  width: 124px;
+  border: 1px solid purple;
+  padding-bottom: 2%;
+}
+
+.page-header-container h1 {
+  color:white;
+}

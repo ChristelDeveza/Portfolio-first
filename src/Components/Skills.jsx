@@ -28,14 +28,16 @@ function Skills() {
   const otherSkills = (
     <ul>
       <li style={listTitleStyle}>OTHER SKILLS</li>
-      <li>Git - GIthub</li>
+      <li>Git - Github</li>
+      <li>Méthode SCRUM</li>
+      <li>Visual Studio Code</li>
     </ul>
   );
 
   const totalSkills = [backendSkills, frontendSkills, otherSkills];
 
   return (
-    <div className='skills'>
+    <div className='skills' id="Skills">
       <PageHeader title={'What about the skills ?'} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor

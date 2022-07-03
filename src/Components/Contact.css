@@ -1,0 +1,12 @@
+.contact {
+  background-color: black;
+  margin-bottom: 5rem;
+}
+
+.contact .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+}

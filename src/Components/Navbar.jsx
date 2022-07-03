@@ -6,11 +6,16 @@ function Navbar() {
     <div className='Navbar'>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Contact</li>
+          <li>
+            <a href="/">Accueil</a></li>
+          <li>
+            <a href="/#About">A propos</a></li>
+          <li>
+            <a href="/#Projects">Projets</a></li>
+          <li>
+            <a href="/#Skills">Compétences</a></li>
+          <li>
+            <a href="/#Contact">Contact</a></li>
         </ul>
       </nav>
     </div>

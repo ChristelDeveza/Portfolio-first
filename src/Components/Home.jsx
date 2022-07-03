@@ -6,9 +6,9 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className='home'>
+    <div className='home' id="Accueil">
       <div className='home-container'>
-        <h1 className='home-text'>Bonjour et bienvenue sur mon site</h1>
+        <h1 className='home-text'>Bonjour et bienvenue sur mon portfolio</h1>
        </div>
        <img className='home-img' src={picture1} alt="picture"/>
        <img className='home-img2' src={picture2} alt="picture2"/>

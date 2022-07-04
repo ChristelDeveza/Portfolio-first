@@ -39,67 +39,8 @@
   left: 45%;
 }
 
-.wrap {
-  perspective: 800px;
-  perspective-origin: 50% 100px;
-}
 
-.cube {
-  position: relative;
-  width: 200px;
-  transform-style: preserve-3d;
-}
 
-.cube div {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-}
-
-.back {
-  transform: translateZ(-100px) rotateY(180deg);
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-
-.right {
-  transform: rotateY(-270deg) translateX(100px);
-  transform-origin: top right;
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-
-.left {
-  transform: rotateY(270deg) translateX(-100px);
-  transform-origin: center left;
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-
-.top {
-  transform: rotateX(-90deg) translateY(-100px);
-  transform-origin: top center;
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-.bottom {
-  transform: rotateX(90deg) translateY(100px);
-  transform-origin: bottom center;
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-.front {
-  transform: translateZ(100px);
-  background: linear-gradient(black, rgb(66, 40, 44), pink, white);
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-.cube {
-  animation: spin 5s infinite linear;
-}
 
 .ring-container {
   position: relative;

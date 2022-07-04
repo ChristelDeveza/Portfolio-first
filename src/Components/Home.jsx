@@ -9,16 +9,6 @@ function Home() {
       <div className='home-container'>
         <h1 className='home-text'>Bonjour et bienvenue sur mon portfolio</h1>
       </div>
-      <div class='wrap'>
-        <div class='cube'>
-          <div class='front'>front</div>
-          <div class='back'>back</div>
-          <div class='top'>top</div>
-          <div class='bottom'>bottom</div>
-          <div class='left'>left</div>
-          <div class='right'>right</div>
-        </div>
-      </div>
       <div className='ring-container'>
         <div className='ring'></div>
         <div className='ring'></div>

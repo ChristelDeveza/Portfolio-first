@@ -37,16 +37,22 @@ function Skills() {
   const totalSkills = [backendSkills, frontendSkills, otherSkills];
 
   return (
-    <div className='skills' id="Skills">
-      <PageHeader title={'What about the skills ?'} />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor
-        vitae explicabo error et debitis libero temporibus harum minima maiores,
-        similique provident ratione ipsam modi atque quaerat nostrum odit
-        pariatur!
-      </p>
+    <div className='skills' id='Skills'>
+      <PageHeader title={'Compétences'} />
+      
       <div className='skills-container'>
-        <img className='img-skills' src={imgSkills} alt='skill-img' />
+        {/* <img className='img-skills' src={imgSkills} alt='skill-img' /> */}
+        <div className='wrap'>
+        <div className='cube'>
+          <div className='front'>frontend</div>
+          <div className='back'>backend</div>
+          <div className='top'>top</div>
+          <div className='bottom'>bottom</div>
+          <div className='left'>soft skills</div>
+          <div className='right'>agilité</div>
+        </div>
+      </div>
+
         <div className='box-skills'>
           {totalSkills.map((skills) => {
             return <div className='list'>{skills}</div>;

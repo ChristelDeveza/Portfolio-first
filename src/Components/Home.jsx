@@ -11,7 +11,9 @@ function Home() {
        
       <div className='home-container'>
      
-             <h1 className='home-text'>Bonjour et bienvenue sur mon portfolio</h1>
+             <h1 className='home-text'>
+              Bonjour et bienvenue sur mon portfolio
+            </h1>
              
       </div>
       <div className='ring-container'>

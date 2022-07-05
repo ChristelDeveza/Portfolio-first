@@ -55,7 +55,7 @@ function Projects() {
 
   const project2 = <p>La Firme : plateforme de mise en relation d'affaire</p>;
   const projectDescription2 = (
-    <p>
+    <p className='text-description'>
       Le project consiste en la création d’un prototype de plateforme web de
       mise en relation entre adhérents de La Firme, réseau d’affaire, pour un
       porteur de projet réel (8 semaines) - projet en cours, réalisé dans le
@@ -76,8 +76,8 @@ function Projects() {
         modélisation de la base de données selon la méthode Merise,
       </li>{' '}
       <li>
-        Site dynamique réalisé en React Js avec create vite@latest pour la partie frontend. Utilisation
-        de React router, hooks et props,
+        Site dynamique réalisé en React Js avec create vite@latest pour la
+        partie frontend. Utilisation de React router, hooks et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
       </li>{' '}
       <li>Site développé en format desktop,</li>
@@ -92,16 +92,18 @@ function Projects() {
   );
 
   const project3 = (
-    <p>Hackathon juin 2022 - Créer un outil de collaboration inter-agence</p>
+    <p>Hackathon juin 2022 <br/> Créer un outil de collaboration inter-agence</p>
   );
   const projectDescription3 = (
-    <p>
-      Le sujet du hackathon était de développer une application de type
-      plateforme collaborative entre agences en 48 heures
-      <br /> L'équipe était constituée de quatre personnes. Le développement de
-      l'application a été réalisée selon deux axes principaux :{' '}
-      <li>la diffusion d'informations entre agences</li>{' '}
+    <p className='text-description'>
+      Sujet du hackathon : développer une application de type plateforme
+      collaborative en 48h.
+      <br /> Equipe de quatre personnes. <br />
+      Le développement de l'application a été réalisée selon deux axes
+      principaux : <li>la diffusion d'informations entre agences</li>{' '}
       <li>la communication entre collaborateurs quelque soit l'agence</li>
+      <br /> <br />
+      <li>Application réalisée en React Js avec create react app</li>
     </p>
   );
   return (
@@ -131,6 +133,15 @@ function Projects() {
             Lien Github du projet
           </a>,
           projectDescription2
+        )}
+        {projectsList(
+          project3,
+          firme,
+          null,
+          <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
+            Lien Github du projet
+          </a>,
+          projectDescription3
         )}
         {projectsList(
           project3,

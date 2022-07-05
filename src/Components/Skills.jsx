@@ -27,7 +27,7 @@ function Skills() {
 
   const otherSkills = (
     <ul>
-      <li style={listTitleStyle}>OTHER SKILLS</li>
+      <li style={listTitleStyle}>AUTRES COMPETENCES</li>
       <li>Git - Github</li>
       <li>Méthode SCRUM</li>
       <li>Visual Studio Code</li>
@@ -39,19 +39,18 @@ function Skills() {
   return (
     <div className='skills' id='Skills'>
       <PageHeader title={'Compétences'} />
-      
+
       <div className='skills-container'>
-        {/* <img className='img-skills' src={imgSkills} alt='skill-img' /> */}
         <div className='wrap'>
-        <div className='cube'>
-          <div className='front'>frontend</div>
-          <div className='back'>backend</div>
-          <div className='top'>top</div>
-          <div className='bottom'>bottom</div>
-          <div className='left'>soft skills</div>
-          <div className='right'>agilité</div>
+          <div className='cube'>
+            <div className='front'>frontend</div>
+            <div className='back'>backend</div>
+            <div className='top'>top</div>
+            <div className='bottom'>bottom</div>
+            <div className='left'>soft skills</div>
+            <div className='right'>agilité</div>
+          </div>
         </div>
-      </div>
 
         <div className='box-skills'>
           {totalSkills.map((skills) => {

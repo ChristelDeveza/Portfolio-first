@@ -1,12 +1,26 @@
 .projects {
-  background-image: url("../Img/ciel-etoile-bleu.jpg");
-  background-size: contain;
-  width:100%;
+  background-color: black;
+  min-width:100vw;
+  max-height: 200vh;
   color: white;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.parts {
+  top:4rem;
 }
 
 .one-project .project-container .picture {
   margin-left: 1rem;
+  display: flex;
+  
+
+  
 }
 .one-project .project-container .picture img {
   height: 100%;
@@ -63,9 +77,8 @@
 .projects .project-container {
   background-color: black;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 300px;
+  min-height: 100%;
+  max-width: 100vw;
   align-items: center;
   border-radius: 20px;
   border: 2px solid white;
@@ -76,11 +89,27 @@
 }
 
 .projects .project-container .text p {
-  margin-top: 2rem;
- margin-right: 11rem;
- margin-left: 2rem;
- 
+  margin: 2rem;
 }
+
+.project-box-before-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin:2rem;
+}
+
+.project-box-before-description a {
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+} 
+
+.project-title p {
+  text-align: center;
+  font-weight: bold;
+  }
 
 
 

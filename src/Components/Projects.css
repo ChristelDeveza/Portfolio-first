@@ -1,7 +1,8 @@
 .projects {
   background-color: black;
-  min-width:100vw;
-  max-height: 300vh;
+  display: inline-block;
+  min-width: 100vw;
+  max-height: 350vh;
   color: white;
 }
 
@@ -58,8 +59,15 @@
 
 /* Style the back side */
 .flip-box-back {
+  background-color: blueviolet;
   color: white;
   transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.text-back {
+  text-align: center;
+  margin-top: 4.5rem;
 }
 
 .projects .project-container {
@@ -85,19 +93,30 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  margin:2rem;
+  margin: 2rem;
 }
 
 .project-box-before-description a {
   text-decoration: none;
-  color:white;
+  color: white;
   cursor: pointer;
-} 
+}
 
 .project-title p {
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 810px) {
+  .projects {
+    min-width: 100vw;
+    max-height: 1000vh;
+    color: white;
   }
-
-
-
+  .project-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+  }
+}

@@ -1,25 +1,24 @@
 .about {
   background-color: black;
   padding-bottom: 5%;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
 }
 
 .about-container {
   display: flex;
   justify-content: space-around;
-
 }
 
 .about-container .about-text {
-  width:47%;
+  width: 47%;
   margin-left: 3%;
 }
 
 .about-container .photo .photo-of-me {
-height: 200px;
-border-radius: 10%;
-margin-top: 4rem;
+  height: 200px;
+  border-radius: 10%;
+  margin-top: 4rem;
 }
 
 h2 {
@@ -36,3 +35,22 @@ p {
   text-align: justify;
 }
 
+@media screen and (max-width: 810px) {
+  .about {
+    width: 120vw;
+    height: 150vh
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: fit-content;
+    position: absolute;
+  }
+
+  .about-container .about-text {
+    width: 80%;
+    margin: 2rem;
+  }
+}

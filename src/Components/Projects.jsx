@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeader from './PageHeader';
 import './Projects.css';
+import { FaArrowDown } from 'react-icons/fa';
 import nope from '../Img/Nope.png';
 import firme from '../Img/Firme.png';
 
@@ -15,6 +16,10 @@ function Projects() {
               <div class='flip-box-inner'>
                 <div class='flip-box-front'>
                   <img src={picture} alt='picture' />
+                </div>
+                <div class='flip-box-back'>
+                  <p className='text-back'>Cliquez sur le ou les liens</p>
+                 <FaArrowDown />
                 </div>
               </div>
             </div>

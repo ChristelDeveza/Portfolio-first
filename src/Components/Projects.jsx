@@ -4,6 +4,7 @@ import './Projects.css';
 import { FaArrowDown } from 'react-icons/fa';
 import nope from '../Img/Nope.png';
 import firme from '../Img/Firme.png';
+import hackathon from '../Img/Hackathon.png';
 
 function Projects() {
   const projectsList = (title, picture, url, githuburl, description) => {
@@ -63,8 +64,7 @@ function Projects() {
     <p className='text-description'>
       Le project consiste en la création d’un prototype de plateforme web de
       mise en relation entre adhérents de La Firme, réseau d’affaire, pour un
-      porteur de projet réel (8 semaines) - projet en cours, réalisé dans le
-      cadre de ma formation à la Wild Code School.{' '}
+      porteur de projet réel, réalisé dans le cadre de ma formation à la Wild Code School.{' '}
       <li>Travail en équipe de quatre personnes,</li>
       <li>
         Pratiques SCRUM : daily meetings, présentation client à chaque fin de
@@ -141,9 +141,9 @@ function Projects() {
         )}
         {projectsList(
           project3,
-          firme,
+          hackathon,
           null,
-          <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
+          <a href='https://github.com/ChristelDeveza/hackathon'>
             Lien Github du projet
           </a>,
           projectDescription3

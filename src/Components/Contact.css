@@ -1,6 +1,8 @@
 .contact {
   background-color: black;
   margin-bottom: 5rem;
+  width:100vw;
+  height: 50vh;
 }
 
 .contact .icons {
@@ -9,4 +11,27 @@
   justify-content: center;
   gap: 2rem;
   cursor: pointer;
+}
+
+ .contact .contact-img2 {
+  height: 24%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert();
+  left: 45%;
+  
+}
+
+.contact .home-img {
+  height: 24%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert();
+  left: 45%;
 }

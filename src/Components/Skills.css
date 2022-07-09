@@ -1,6 +1,8 @@
 .skills {
   background-color: black;
   padding-bottom: 5%;
+  width:100vw;
+  height: 80vh;
 }
 
 .skills .list ul {

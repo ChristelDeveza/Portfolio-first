@@ -8,6 +8,7 @@ import Contact from './Components/Contact'
 import Skills from './Components/Skills'
 import Home from './Components/Home'
 
+
 function App() {
   const [count, setCount] = useState(0)
 

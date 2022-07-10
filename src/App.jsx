@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
@@ -10,7 +8,7 @@ import Home from './Components/Home'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className="App">

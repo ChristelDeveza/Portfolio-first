@@ -20,7 +20,7 @@ function Projects() {
                 </div>
                 <div class='flip-box-back'>
                   <p className='text-back'>Cliquez sur le ou les liens</p>
-                 <FaArrowDown />
+                  <FaArrowDown />
                 </div>
               </div>
             </div>
@@ -64,8 +64,8 @@ function Projects() {
     <p className='text-description'>
       Le project consiste en la création d’un prototype de plateforme web de
       mise en relation entre adhérents de La Firme, réseau d’affaire, pour un
-      porteur de projet réel, réalisé dans le cadre de ma formation à la Wild Code School.{' '}
-      <li>Travail en équipe de quatre personnes,</li>
+      porteur de projet réel, réalisé dans le cadre de ma formation à la Wild
+      Code School. <li>Travail en équipe de quatre personnes,</li>
       <li>
         Pratiques SCRUM : daily meetings, présentation client à chaque fin de
         sprint, rétrospective, product et sprint blacklogs,
@@ -85,7 +85,7 @@ function Projects() {
         partie frontend. Utilisation de React router, hooks et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
       </li>{' '}
-      <li>Site développé en format desktop,</li>
+      <li>Site développé en format desktop uniquement,</li>
       <li>Création des comptes adhérent et d'un compte administrateur,</li>
       <li>Mise en place du hashage des mots de passe avec argon2,</li>
       <li>Utilisation de json web token,</li>
@@ -97,7 +97,9 @@ function Projects() {
   );
 
   const project3 = (
-    <p>Hackathon juin 2022 <br/> Créer un outil de collaboration inter-agence</p>
+    <p>
+      Hackathon juin 2022 <br /> Créer un outil de collaboration inter-agence
+    </p>
   );
   const projectDescription3 = (
     <p className='text-description'>
@@ -109,6 +111,41 @@ function Projects() {
       <li>la communication entre collaborateurs quelque soit l'agence</li>
       <br /> <br />
       <li>Application réalisée en React Js avec create react app</li>
+    </p>
+  );
+
+  const project4 = (
+    <p>
+      Fit N Cheap Club <br /> Site internet d'une salle de sport
+    </p>
+  );
+  const projectDescription4 = (
+    <p className='text-description'>
+      Objectif : développer une application pour une salle de sport.
+      <br /> <br />
+      Projet personnel présenté dans le cadre de ma formation à la Wild Code
+      School. <br /> <br />
+      Le développement de l'application a été réalisée selon deux axes
+      principaux :{' '}
+      <li>la présentation de la salle de sport et de son offre,</li>{' '}
+      <li>
+        la création d'un compte utilisateur et d'un compte administrateur.
+      </li>
+      <br />
+      Stack technique :
+      <li>
+        Site dynamique réalisé en React Js avec create vite@latest pour la
+        partie frontend. Utilisation de React router, hooks (useState,
+        useEffect, useContext, useNavigate) et props,
+        <li>Backend réalisé avec Express Js sur modèle MVC,</li>
+        <li> Modélisation de la base de données selon la méthode Merise,</li>
+        <li>
+          Mise en place du hashage des mots de passe avec argon2 pour la
+          création de compte,
+        </li>
+        <li>Utilisation de json web token et du localstorage,</li>
+        <li>Site web responsive.</li>
+      </li>{' '}
     </p>
   );
   return (
@@ -149,13 +186,13 @@ function Projects() {
           projectDescription3
         )}
         {projectsList(
-          project3,
+          project4,
           firme,
           null,
           <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
             Lien Github du projet
           </a>,
-          projectDescription3
+          projectDescription4
         )}
       </div>
     </div>

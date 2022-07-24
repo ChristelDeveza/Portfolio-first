@@ -4,7 +4,9 @@ import './Projects.css';
 import { FaArrowDown } from 'react-icons/fa';
 import nope from '../Img/Nope.png';
 import firme from '../Img/Firme.png';
-import hackathon from '../Img/Hackathon.png';
+import hackathon from '../Img/Hackathon.png'
+import sport from '../Img/Sport.png';
+
 
 function Projects() {
   const projectsList = (title, picture, url, githuburl, description) => {
@@ -170,7 +172,7 @@ function Projects() {
         {projectsList(
           project2,
           firme,
-          null,
+          <a href="https://lafirme.vpscitest.ovh/">Site internet : la Firme</a>,
           <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
             Lien Github du projet
           </a>,
@@ -187,9 +189,9 @@ function Projects() {
         )}
         {projectsList(
           project4,
-          firme,
+          sport,
           null,
-          <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
+          <a href='https://github.com/ChristelDeveza/Projet4'>
             Lien Github du projet
           </a>,
           projectDescription4

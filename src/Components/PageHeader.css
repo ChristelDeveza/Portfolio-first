@@ -10,11 +10,16 @@
   position: absolute;
   left: 0;
   width: 124px;
-  border: 1px solid purple;
-  background-color: purple;
+  border: 1px solid pink;
+  background-color: pink;
   padding-bottom: 2%;
 }
 
 .page-header-container h1 {
   color:white;
+}
+@media screen and (max-width: 810px) {
+  .page-header-container hr {
+    left: -5rem;
+  }
 }

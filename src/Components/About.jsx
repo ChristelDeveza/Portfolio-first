@@ -24,7 +24,7 @@ function About() {
             le titre "Développeur web et web mobile" (équivalent Bac +2 et
             inscrit au RNCP). <br /> <br/>Compétences visées : Concevoir et
             développer une application web et mobile, intégrer une interface
-            utilisateur. Langages : HTML/CSS, Javascript/React.js,
+            utilisateur. <br/> <br /> Langages : HTML/CSS, Javascript/React.js,
             Node.js/Express.js.
           </p>
         </div>

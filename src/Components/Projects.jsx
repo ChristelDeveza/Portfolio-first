@@ -4,9 +4,8 @@ import './Projects.css';
 import { FaArrowDown } from 'react-icons/fa';
 import nope from '../Img/Nope.png';
 import firme from '../Img/Firme.png';
-import hackathon from '../Img/Hackathon.png'
+import hackathon from '../Img/Hackathon.png';
 import sport from '../Img/Sport.png';
-
 
 function Projects() {
   const projectsList = (title, picture, url, githuburl, description) => {
@@ -82,25 +81,22 @@ function Projects() {
         porteur de projet, définition des user stories, wireframes et
         modélisation de la base de données selon la méthode Merise,
       </li>{' '}
+      <li>Création des comptes adhérent et d'un compte administrateur,</li>
       <li>
         Site dynamique réalisé en React Js avec create vite@latest pour la
         partie frontend. Utilisation de React router, hooks et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
       </li>{' '}
       <li>Site développé en format desktop uniquement,</li>
-      <li>Création des comptes adhérent et d'un compte administrateur,</li>
       <li>Mise en place du hashage des mots de passe avec argon2,</li>
-      <li>Utilisation de json web token,</li>
-      <li>
-        Utilisation des bibliotèques JOI (en backend) et React-Hook-Form (en
-        frontend) pour la validation des formulaires
-      </li>
+      <li>Utilisation de json web token.</li>
     </p>
   );
 
   const project3 = (
     <p>
-      Hackathon juin 2022 <br /> Créer un outil de collaboration inter-agence
+      Hackathon juin 2022 - Wild Code School
+      <br /> Créer un outil de collaboration inter-agence
     </p>
   );
   const projectDescription3 = (
@@ -109,10 +105,10 @@ function Projects() {
       collaborative en 48h.
       <br /> Equipe de quatre personnes. <br />
       Le développement de l'application a été réalisée selon deux axes
-      principaux : <li>la diffusion d'informations entre agences</li>{' '}
-      <li>la communication entre collaborateurs quelque soit l'agence</li>
+      principaux : <li>la diffusion d'informations entre agences,</li>{' '}
+      <li>la communication entre collaborateurs quelque soit l'agence.</li>
       <br /> <br />
-      <li>Application réalisée en React Js avec create react app</li>
+      <li>Application réalisée en React Js avec create react app.</li>
     </p>
   );
 
@@ -123,15 +119,19 @@ function Projects() {
   );
   const projectDescription4 = (
     <p className='text-description'>
-      Objectif : développer une application pour une salle de sport.
+      Projet personnel de site internet de salle de sport présenté dans le cadre
+      de ma formation à la Wild Code School. <br /> <br />
+      Objectif : Concevoir et développer une application web et mobile.
       <br /> <br />
-      Projet personnel présenté dans le cadre de ma formation à la Wild Code
-      School. <br /> <br />
+      Ce projet est en cours de construction et d'amélioration.
+      <br />
+      <br />
       Le développement de l'application a été réalisée selon deux axes
       principaux :{' '}
       <li>la présentation de la salle de sport et de son offre,</li>{' '}
       <li>
-        la création d'un compte utilisateur et d'un compte administrateur.
+        la création d'un compte utilisateur (en cours) et d'un compte
+        administrateur (à venir).
       </li>
       <br />
       Stack technique :
@@ -140,13 +140,12 @@ function Projects() {
         partie frontend. Utilisation de React router, hooks (useState,
         useEffect, useContext, useNavigate) et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
-        <li> Modélisation de la base de données selon la méthode Merise,</li>
+        <li>Modélisation de la base de données selon la méthode Merise,</li>
         <li>
           Mise en place du hashage des mots de passe avec argon2 pour la
           création de compte,
         </li>
-        <li>Utilisation de json web token et du localstorage,</li>
-        <li>Site web responsive.</li>
+        <li>Utilisation de json web token et du localstorage.</li>
       </li>{' '}
     </p>
   );
@@ -172,7 +171,7 @@ function Projects() {
         {projectsList(
           project2,
           firme,
-          <a href="https://lafirme.vpscitest.ovh/">Site internet : la Firme</a>,
+          <a href='https://lafirme.vpscitest.ovh/'>Site internet : la Firme</a>,
           <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
             Lien Github du projet
           </a>,
@@ -190,7 +189,9 @@ function Projects() {
         {projectsList(
           project4,
           sport,
-          null,
+          <a href='https://sportfitncheapclub.netlify.app/'>
+            Site internet : Fit N Cheap Club (partie front-end)
+          </a>,
           <a href='https://github.com/ChristelDeveza/Projet4'>
             Lien Github du projet
           </a>,

@@ -7,7 +7,7 @@ function Home() {
     <div className='home' id='Accueil'>
       <Particules />
       <div className='home-container'>
-        <h1 className='home-text'>Bonjour et bienvenue sur mon portfolio</h1>
+        <h1 className='home-text'>Bonjour je m'appelle Christel, développeuse web. <br/> Bienvenue sur mon portfolio</h1>
       </div>
       <div className='ring-container'>
         <div className='ring'></div>

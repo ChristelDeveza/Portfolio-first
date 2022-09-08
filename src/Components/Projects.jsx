@@ -168,15 +168,7 @@ function Projects() {
           </a>,
           projectDescription1
         )}
-        {projectsList(
-          project2,
-          firme,
-          <a href='https://lafirme.vpscitest.ovh/'>Site internet : la Firme</a>,
-          <a href='https://github.com/WildCodeSchool/2022-03-JS-Toulouse-project-3-lafirme'>
-            Lien Github du projet
-          </a>,
-          projectDescription2
-        )}
+        {projectsList(project2, firme, null, null, projectDescription2)}
         {projectsList(
           project3,
           hackathon,

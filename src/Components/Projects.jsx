@@ -6,6 +6,7 @@ import nope from '../Img/Nope.png';
 import firme from '../Img/Firme.png';
 import hackathon from '../Img/Hackathon.png';
 import sport from '../Img/Sport.png';
+import Modal from '../Components/Modal';
 
 function Projects() {
   const projectsList = (title, picture, url, githuburl, description) => {
@@ -168,7 +169,7 @@ function Projects() {
           </a>,
           projectDescription1
         )}
-        {projectsList(project2, firme, null, null, projectDescription2)}
+        {projectsList(project2, firme, <Modal />, null, projectDescription2)}
         {projectsList(
           project3,
           hackathon,

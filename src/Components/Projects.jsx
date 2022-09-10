@@ -41,7 +41,8 @@ function Projects() {
   const projectDescription1 = (
     <p className='text-description'>
       Ce site dynamique a été réalisé en React Js, dans le cadre de ma formation
-      à la Wild Code School.
+      à la Wild Code School. <br />
+      <br />
       <li>Travail en équipe de quatre personnes,</li>
       <li>
         Pratiques SCRUM : daily meetings, présentation client à chaque fin de
@@ -56,7 +57,7 @@ function Projects() {
         Site réalisé avec create vite @latest : utilisation de React router,
         hooks et props,
       </li>
-      <li>Appel d`API effectué avec axios,</li> <li>Utilisation de Leaflet,</li>
+      <li>Appel d`API,</li> <li>Utilisation de Leaflet,</li>
       <li>Site développé en format mobile uniquement.</li>
     </p>
   );
@@ -65,9 +66,16 @@ function Projects() {
   const projectDescription2 = (
     <p className='text-description'>
       Le project consiste en la création d’un prototype de plateforme web de
-      mise en relation entre adhérents de La Firme, réseau d’affaire, pour un
-      porteur de projet réel, réalisé dans le cadre de ma formation à la Wild
-      Code School. <li>Travail en équipe de quatre personnes,</li>
+      mise en relation entre adhérents de La Firme, réseau d’affaire, réalisé
+      dans le cadre de ma formation à la Wild Code School.
+      <br />
+      <br />
+      <li>
+        Besoins et fonctionalités élaborés en collaboration avec le porteur de
+        projet,
+      </li>
+      <li>Charte graphique fournie par le porteur de projet,</li>
+      <li>Travail en équipe de quatre personnes,</li>
       <li>
         Pratiques SCRUM : daily meetings, présentation client à chaque fin de
         sprint, rétrospective, product et sprint blacklogs,
@@ -75,21 +83,19 @@ function Projects() {
       <li>Utilisation d'un workflow Git/GitHub,</li>
       <li>
         Clean code, relecture du code et standards respectés lors des pull
-        request (ESLint, Prettier),
-      </li>{' '}
+        request (ESLint, Prettier).
+      </li>
       <li>
         À partir de la liste des principales fonctionnalités demandées par le
         porteur de projet, définition des user stories, wireframes et
         modélisation de la base de données selon la méthode Merise,
-      </li>{' '}
-      <li>Création des comptes adhérent et d'un compte administrateur,</li>
+      </li>
       <li>
         Site dynamique réalisé en React Js avec create vite@latest pour la
         partie frontend. Utilisation de React router, hooks et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
       </li>{' '}
       <li>Site développé en format desktop uniquement,</li>
-      <li>Mise en place du hashage des mots de passe avec argon2,</li>
       <li>Utilisation de json web token.</li>
     </p>
   );
@@ -104,11 +110,9 @@ function Projects() {
     <p className='text-description'>
       Sujet du hackathon : développer une application de type plateforme
       collaborative en 48h.
-      <br /> Equipe de quatre personnes. <br />
-      Le développement de l'application a été réalisée selon deux axes
-      principaux : <li>la diffusion d'informations entre agences,</li>{' '}
-      <li>la communication entre collaborateurs quelque soit l'agence.</li>
       <br /> <br />
+      Equipe de quatre personnes. <br />
+      <br />
       <li>Application réalisée en React Js avec create react app.</li>
     </p>
   );
@@ -142,10 +146,6 @@ function Projects() {
         useEffect, useContext, useNavigate) et props,
         <li>Backend réalisé avec Express Js sur modèle MVC,</li>
         <li>Modélisation de la base de données selon la méthode Merise,</li>
-        <li>
-          Mise en place du hashage des mots de passe avec argon2 pour la
-          création de compte,
-        </li>
         <li>Utilisation de json web token et du localstorage.</li>
       </li>{' '}
     </p>
@@ -159,6 +159,17 @@ function Projects() {
       </div>
       <div className='one-project'>
         {projectsList(
+          project4,
+          sport,
+          <a href='https://sportfitncheapclub.netlify.app/'>
+            Site internet : Fit N Cheap Club (partie front-end)
+          </a>,
+          <a href='https://github.com/ChristelDeveza/Projet4'>
+            Lien Github du projet
+          </a>,
+          projectDescription4
+        )}
+        {projectsList(
           project1,
           nope,
           <a href='https://p3-2109-nope-front.toulouse-1.wilders.dev/'>
@@ -169,7 +180,16 @@ function Projects() {
           </a>,
           projectDescription1
         )}
-        {projectsList(project2, firme, <Modal />, null, projectDescription2)}
+        {projectsList(
+          project2,
+          firme,
+          <div className='captures'>
+            <p>Captures d'écrans du site</p>
+            <Modal />
+          </div>,
+          null,
+          projectDescription2
+        )}
         {projectsList(
           project3,
           hackathon,
@@ -178,17 +198,6 @@ function Projects() {
             Lien Github du projet
           </a>,
           projectDescription3
-        )}
-        {projectsList(
-          project4,
-          sport,
-          <a href='https://sportfitncheapclub.netlify.app/'>
-            Site internet : Fit N Cheap Club (partie front-end)
-          </a>,
-          <a href='https://github.com/ChristelDeveza/Projet4'>
-            Lien Github du projet
-          </a>,
-          projectDescription4
         )}
       </div>
     </div>

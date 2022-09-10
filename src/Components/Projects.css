@@ -107,6 +107,12 @@
   font-weight: bold;
 }
 
+.captures {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+}
+
 @media screen and (max-width: 810px) {
   .projects {
     min-width: 100vw;

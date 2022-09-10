@@ -131,13 +131,11 @@ function Projects() {
       Ce projet est en cours de construction et d'amélioration.
       <br />
       <br />
-      Le développement de l'application a été réalisée selon deux axes
+      Le développement de l'application a été réalisé selon trois axes
       principaux :{' '}
       <li>la présentation de la salle de sport et de son offre,</li>{' '}
-      <li>
-        la création d'un compte utilisateur (en cours) et d'un compte
-        administrateur (à venir).
-      </li>
+      <li>la création d'un compte utilisateur (en cours),</li>
+      <li>la création d'un compte administrateur (à venir).</li>
       <br />
       Stack technique :
       <li>

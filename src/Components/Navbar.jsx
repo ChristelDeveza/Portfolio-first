@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './Navbar.css';
 
 function Navbar() {
-  const [sidebar, setSidebar]=useState(false)
+  const [sidebar, setSidebar] = useState(false);
 
-  function showSidebar(){
-    setSidebar(!sidebar)
+  function showSidebar() {
+    setSidebar(!sidebar);
   }
   return (
     <div className='Navbar'>
@@ -13,7 +13,7 @@ function Navbar() {
         <ul>
           <div className='button-container'>
             <button
-              className={sidebar?'hamburger open':'hamburger'}
+              className={sidebar ? 'hamburger open' : 'hamburger'}
               type='button'
               aria-label='Toggle nav'
               aria-expanded='false'
@@ -24,7 +24,8 @@ function Navbar() {
               <span></span>
             </button>
           </div>
-          <div className={!sidebar? 'nav-container':'nav-container open'}>
+
+          <div className={!sidebar ? 'nav-container' : 'nav-container open'}>
             <li>
               <a href='/'>Accueil</a>
             </li>

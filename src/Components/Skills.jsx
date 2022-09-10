@@ -48,7 +48,7 @@ function Skills() {
             <div className='top'>top</div>
             <div className='bottom'>bottom</div>
             <div className='left'>soft skills</div>
-            <div className='right'>agilité</div>
+            <div className='right'>hard skills</div>
           </div>
         </div>
 
